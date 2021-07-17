@@ -1,0 +1,30 @@
+service: input-validator
+
+frameworkVersion: "2"
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: ap-southeast-1
+  environment:
+    STAGE: ${self:custom.stage}
+    # keep alive
+    AWS_NODEJS_CONNECTION_REUSE_ENABLED: "1"
+
+package:
+  exclude:
+    - package-lock.json
+    - package.json
+
+custom:
+  region: ${opt:region, self:provider.region}
+  stage: ${opt:stage, self:provider.stage}
+
+functions:
+  characterLength:
+    handler: handlers/character-length.handler
+    timeout: 30
+    events:
+      - http:
+          path: charcheck
+          method: post
