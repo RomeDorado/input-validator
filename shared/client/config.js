@@ -6,5 +6,9 @@ module.exports.CLIENT_CONFIG = {
     'nwpc': {
         block: { 'redirect_to_blocks': ['nwpc'] },
         ai: { redirect_to_blocks: ['AI-DF'] }
+    },
+    'aboitiz': {
+        block: { 'redirect_to_blocks': ['CHARACTER EXCEEDED'] },
+        ai: { redirect_to_blocks: ['DEFAULT BLOCK'] }
     }
 };
