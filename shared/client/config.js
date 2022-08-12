@@ -10,5 +10,9 @@ module.exports.CLIENT_CONFIG = {
     'aboitiz': {
         block: { 'redirect_to_blocks': ['CHARACTER EXCEEDED'] },
         ai: { redirect_to_blocks: ['DEFAULT BLOCK'] }
+    },
+    'powermac': {
+        block: { 'redirect_to_blocks': ['CHARACTER EXCEEDED'] },
+        ai: { redirect_to_blocks: ['Default Answer'] }
     }
 };
