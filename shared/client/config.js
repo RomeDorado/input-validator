@@ -12,7 +12,7 @@ module.exports.CLIENT_CONFIG = {
         ai: { redirect_to_blocks: ['DEFAULT BLOCK'] }
     },
     'powermac': {
-        block: { 'redirect_to_blocks': ['CHARACTER EXCEEDED'] },
+        block: { 'redirect_to_blocks': ['Character exceeded'] },
         ai: { redirect_to_blocks: ['Default Answer'] }
     }
 };
